@@ -19,8 +19,19 @@ View post shows all the info from the home page, the photo would be bigger. It w
 
 The plus button in the bottom corner of the home page redirects to the create post page, everything except the image, in this case, is required. So if we create and view this post it will show the edit button instead of the purchase button. 
 
-Now when viewing home screen it will show edit button, which redirects to the edit post page. Clicking the edit button in the post also redirects to the edit post page.
+Now when viewing home screen it will show edit button, which redirects to the edit post page. (Clicking the edit button in the post also redirects to the edit post page).
 
-If you are viewing someone else’s post pressing the purchase button will show an alert that your purchase has been received. It will redirect to purchases page, which would show all your purchases. If the post was previously purchased a validation will redirect to home and alert that 
+If you are viewing someone else’s post pressing the purchase button will show an alert that your purchase has been received. It will redirect to purchases page, which would show all your purchases. If the post was previously purchased a validation will redirect to home and alert that
 
-[![Art Plaza Project Presentatino](http:"C:\Users\eliba\OneDrive\Pictures\Screenshots\Screenshot (20).png")](http://youtu.be/qmTiQN_im90E "Art Plaza Project")
+the post was already purchased. Clicking the purchases link on the home page will redirect to your purchases so you can view them at anytime. Users are able to delete from purchases by clicking cancel on the purchase page, which will take it off purchases and allow others to purchase it again.
+
+The delete button will delete the post from the home page as well as purchases (in the case that a user had requested to purchase it).
+ 
+ The logout button will take the user out of session and return to login in.
+
+I would have liked to been able to display the images because it is an art website, where viewers want to see the art, but I’m still trying to learn how to retrieve image (blob) data from the database. 
+
+I’d also like to redo the css and make it look less simple, more like an actual website. But it is a work in progress, I will continue to work and improve what I’ve already made so far. Thank you
+
+**Video Link:**
+[![Art Plaza Project Presentation](http:"C:\Users\eliba\OneDrive\Pictures\Screenshots\Screenshot (20).png")](http://youtu.be/qmTiQN_im90E "Art Plaza Project")
