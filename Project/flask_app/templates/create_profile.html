@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d95d767988.js" crossorigin="anonymous"></script></head>
+    <link rel="stylesheet" href="../static/css/style.css">
+<body>
+    <div class="container w-75" id="sm-0, med-1, lg-2">
+        <header class="pt-3 mb-4 border-bottom">
+                <h3 class="text-center mb-0">Create Profile</h3></li>
+        </header>
+        <div class="container p-3 border border-dark border-2 rounded">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img src="{{user.profile_pic}}" alt="Not available at the moment." id="lg-pfp">
+                    <form action="#">
+                        <input type="file" id="myFile" name="img">
+                        <input type="submit" value="Sumbit" onclick="notavailable()">
+                    </form>
+                </div>
+                <div class="col-8">
+                    <form action="/create/profile" method="post">
+                        <div class="row mb-2">
+                            <label for="username" class="form-label">Username: @</label>
+                            <input type="text" class="form-control" name="username">
+                        </div>
+                        <div class="row mb-2">
+                            <label for="location" class="form-label">Location:</label>
+                            <input type="text" class="form-control" name="location">
+                        </div>
+                        <div class="row mb-2">
+                            <label for="contact" class="form-label">Contact Info:</label>
+                            <input type="text" class="form-control" name="contact">
+                        </div>
+                        <div class="row mb-2">
+                            <label for="description" class="form-label">Bio:</label>
+                            <textarea class="form-control" name ="description" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary w-100">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="text-danger">
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% endwith %}
+    </div>
+<script src="../static/js/script.js"></script>
+</body>
+</html>
