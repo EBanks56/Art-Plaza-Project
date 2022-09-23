@@ -22,3 +22,5 @@ The plus button in the bottom corner of the home page redirects to the create po
 Now when viewing home screen it will show edit button, which redirects to the edit post page. Clicking the edit button in the post also redirects to the edit post page.
 
 If you are viewing someone else’s post pressing the purchase button will show an alert that your purchase has been received. It will redirect to purchases page, which would show all your purchases. If the post was previously purchased a validation will redirect to home and alert that 
+
+[![Art Plaza Project Presentatino](http:"C:\Users\eliba\OneDrive\Pictures\Screenshots\Screenshot (20).png")](http://youtu.be/qmTiQN_im90E "Art Plaza Project")
